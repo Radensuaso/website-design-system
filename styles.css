@@ -1,0 +1,27 @@
+body {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+#ocean {
+    background-color: #246BBD;
+}
+
+#blueish {
+    background-color: #2924BD;
+}
+
+#purpleish {
+    background-color: #7624BD;
+}
+
+#radiant-pink {
+    background-color: #BD24B8;
+}
+
+.colors {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 0px 20px 20px 0px;
+}
