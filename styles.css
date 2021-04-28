@@ -72,7 +72,7 @@ section {
 
 /*Colors section*/
 
-.palette {
+.colors {
     color: white;
     border-radius: 5px;
     display: inline-block;
@@ -80,6 +80,8 @@ section {
     height: 100px; 
     margin: 0 25px 25px 0;  
     text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
 }
 
 #ocean {
@@ -100,7 +102,15 @@ section {
 
 /*Fonts section*/
 
-#fonts h3 {
+.fonts {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    padding: 10px;
+    margin: 0 25px 25px 0; 
+}
+
+.fonts h3 {
     text-decoration: underline;
     font-weight: 400;
 }
@@ -162,7 +172,6 @@ section {
     font-style: italic;
 }
 
-/*Font section structure*/
 
 
 
