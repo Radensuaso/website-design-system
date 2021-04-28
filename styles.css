@@ -1,4 +1,64 @@
+/*Fonts*/
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400, 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-fCZM.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: 400, 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4m0qyriQwlOrhSvowK_l5-eRZOf-I.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400, 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400, 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v27/KFOkCnqEu92Fr1Mu51xIIzI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400, 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/robotomono/v13/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSh0mQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+ @font-face {
+    font-family: 'Roboto Mono';
+    font-style: italic;
+    font-weight: 400, 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/robotomono/v13/L0xoDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnANW6Cpk.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+/*General*/
+
 body {
+    box-sizing: border-box;
+    min-width: 250px;
     max-width: 70%;
     margin: 0 auto;
 }
@@ -7,22 +67,18 @@ section {
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     margin: 0px auto 30px;
-    padding: 0px 0px 20px 20px;
+    padding: 0px 0px 0px 25px;
 }
 
-header {
+/*Colors section*/
 
-}
-
-/*Colors*/
-
-.colors {
+.palette {
     color: white;
     border-radius: 5px;
     display: inline-block;
     width: 200px;
     height: 100px; 
-    margin: 0 20px 20px 0;  
+    margin: 0 25px 25px 0;  
     text-align: center;
 }
 
@@ -41,6 +97,79 @@ header {
 #radiant-pink {
     background-color: #BD24B8;
 }
+
+/*Fonts section*/
+
+#fonts h3 {
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+#merriweather {
+    font-family: "Merriweather";
+}
+
+#merriweather .normal {
+    font-weight: normal;
+    font-style: normal;
+}
+
+#merriweather .bold {
+    font-weight: 700;
+    font-style: normal;
+}
+
+#merriweather .italic {
+    font-weight: normal;
+    font-style: italic;
+}
+
+#roboto {
+    font-family: "Roboto";
+}
+
+#roboto .normal {
+    font-weight: normal;
+    font-style: normal;
+}
+
+#roboto .bold {
+    font-weight: 700;
+    font-style: normal;
+}
+
+#roboto .italic {
+    font-weight: normal;
+    font-style: italic;
+}
+
+#roboto-mono {
+    font-family: "Roboto Mono";
+}
+
+#roboto-mono .normal {
+    font-weight: normal;
+    font-style: normal;
+}
+
+#roboto-mono .bold {
+    font-weight: 700;
+    font-style: normal;
+}
+
+#roboto-mono .italic {
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*Font section structure*/
+
+
+
+
+
+
+
 
 
 
